@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-primary: 'Geologica', "sans-serif";
+    --color-primary: var(--color-primary);
+    --color-secondary: var(--color-secondary);
+    --color-subtitle: var(--color-subtitle);
+    --color-accent: var(--color-accent);
+    --color-accent-tinted: var(--color-accent-tinted);
+    --color-accent-dark: var(--color-accent-dark);
+    --color-destructive: var(--color-destructive);
+}
+
+* {
+    transition-timing-function: cubic-bezier(.25, 1, .25, 1);
+}
+
+body {
+    @apply bg-primary;
+    @apply text-black dark:text-white font-primary;
+    transition: background-color 400ms;
+}
+
+.text-subtitle-hover:hover {
+    @apply text-accent-dark dark:text-accent/80 font-primary;
+}
+
+.border-color {
+    @apply border-black/20 dark:border-white/10
+}
+
+button {
+    @apply cursor-pointer
+}
+
+input[type=radio] {
+    @apply my-auto h-5 w-5 appearance-none;
+}

@@ -1,0 +1,20 @@
+:root {
+    --color-primary: #f4f4f5;
+    --color-secondary: #e4e4e6;
+    --color-accent: #16FEAD;
+    --color-accent-tinted: #17cb8d;
+    --color-accent-dark: #097d52;
+    --color-subtitle: #929293;
+    --color-destructive: #a20606;
+    --color-contrast: #1a1a1a;
+}
+
+:root.dark {
+    --color-primary: #171717;
+    --color-secondary: #2b2b2b;
+    --color-accent: #097d52;
+    --color-accent-tinted: #1f8a66;
+    --color-subtitle: #808080;
+    --color-destructive: #b72525;
+    --color-contrast: #a9a9a9;
+}
